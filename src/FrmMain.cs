@@ -13,6 +13,10 @@ namespace FlashTimer {
         private TimeSpan setTime;//セットした残り時間
         private TimeSpan havePassedTime;//累積既測定時間（現在測定中の時間を含まない）
         private DateTime stopTime;//一時停止した時刻
+
+        private readonly Size SMALL_SIZE = new Size(305, 162); //初期ウインドウサイズ
+        private readonly Size LARGE_SIZE = new Size(305, 353); //拡大時ウインドウサイズ
+
         public FrmMain() {
             InitializeComponent();
             cantClose = true;
@@ -28,7 +32,7 @@ namespace FlashTimer {
             chkSetByAbsoluteTime.Checked = setByAbsoluteTime;
             txtMsg.Text = message;
             nudBlink.Value = interval;
-            Size = MinimumSize = MaximumSize = new Size(Width, 340);
+            Size = LARGE_SIZE;
             btnOption.Text = "↑縮小";
         }
 
@@ -119,12 +123,12 @@ namespace FlashTimer {
         }
 
         private void btnOption_Click(object sender, EventArgs e) {
-            if (Height ==153) {
-                Size = MinimumSize = MaximumSize = new Size(Width, 340);
+            if (Height < LARGE_SIZE.Height) {
+                Size = new Size(Width, LARGE_SIZE.Height);
                 btnOption.Text = "↑縮小";
             }
             else {
-                Size = MinimumSize = MaximumSize = new Size(Width, 153);
+                Size = new Size(Width, SMALL_SIZE.Height);
                 btnOption.Text = "↓拡張";
             }
         }
