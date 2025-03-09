@@ -113,9 +113,9 @@ namespace FlashTimer {
             nudSecond.Value = remain.Seconds;
             lblSubSecond.Text=string.Format("{0:0}",remain.Milliseconds/100);
             _passed += havePassedTime;
-            lblPassed.Text = string.Format("{0:hh:mm:ss}", new TimeSpan(_passed.Hours, _passed.Minutes, _passed.Seconds));
+            lblPassed.Text = string.Format("{0:hh}:{0:mm}:{0:ss}", new TimeSpan(_passed.Hours, _passed.Minutes, _passed.Seconds));
             lblPassedSubSecond.Text = string.Format("{0:0}", _passed.Milliseconds / 100);
-            Text = string.Format("{0:hh:mm:ss}", new TimeSpan(remain.Hours, remain.Minutes, remain.Seconds));
+            Text = string.Format("{0:hh}:{0:mm}:{0:ss}", new TimeSpan(remain.Hours, remain.Minutes, remain.Seconds));
         }
 
         private void btnOption_Click(object sender, EventArgs e) {

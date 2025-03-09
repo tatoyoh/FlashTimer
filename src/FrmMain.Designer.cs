@@ -86,9 +86,9 @@
             this.nudHour.Size = new System.Drawing.Size(55, 27);
             this.nudHour.TabIndex = 1;
             this.nudHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudHour.Enter += new System.EventHandler(this.numericUpDownEntered);
-            this.nudHour.Click += new System.EventHandler(this.numericUpDownEntered);
             this.nudHour.ValueChanged += new System.EventHandler(this.remainChanged);
+            this.nudHour.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudHour.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // nudMinute
             // 
@@ -104,9 +104,9 @@
             this.nudMinute.Size = new System.Drawing.Size(55, 27);
             this.nudMinute.TabIndex = 3;
             this.nudMinute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudMinute.Enter += new System.EventHandler(this.numericUpDownEntered);
-            this.nudMinute.Click += new System.EventHandler(this.numericUpDownEntered);
             this.nudMinute.ValueChanged += new System.EventHandler(this.remainChanged);
+            this.nudMinute.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudMinute.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // nudSecond
             // 
@@ -122,9 +122,9 @@
             this.nudSecond.Size = new System.Drawing.Size(55, 27);
             this.nudSecond.TabIndex = 5;
             this.nudSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudSecond.Enter += new System.EventHandler(this.numericUpDownEntered);
-            this.nudSecond.Click += new System.EventHandler(this.numericUpDownEntered);
             this.nudSecond.ValueChanged += new System.EventHandler(this.remainChanged);
+            this.nudSecond.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudSecond.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // label1
             // 
@@ -281,8 +281,8 @@
             this.nudAbsHour.Size = new System.Drawing.Size(55, 27);
             this.nudAbsHour.TabIndex = 12;
             this.nudAbsHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudAbsHour.Enter += new System.EventHandler(this.numericUpDownEntered);
             this.nudAbsHour.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudAbsHour.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // nudAbsMinute
             // 
@@ -299,8 +299,8 @@
             this.nudAbsMinute.Size = new System.Drawing.Size(55, 27);
             this.nudAbsMinute.TabIndex = 14;
             this.nudAbsMinute.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudAbsMinute.Enter += new System.EventHandler(this.numericUpDownEntered);
             this.nudAbsMinute.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudAbsMinute.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // nudAbsSecond
             // 
@@ -317,8 +317,8 @@
             this.nudAbsSecond.Size = new System.Drawing.Size(55, 27);
             this.nudAbsSecond.TabIndex = 16;
             this.nudAbsSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nudAbsSecond.Enter += new System.EventHandler(this.numericUpDownEntered);
             this.nudAbsSecond.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudAbsSecond.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // chkSetByAbsoluteTime
             // 
@@ -410,8 +410,8 @@
             0,
             0,
             0});
-            this.nudBlink.Enter += new System.EventHandler(this.numericUpDownEntered);
             this.nudBlink.Click += new System.EventHandler(this.numericUpDownEntered);
+            this.nudBlink.Enter += new System.EventHandler(this.numericUpDownEntered);
             // 
             // label10
             // 
@@ -462,7 +462,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnReset;
-            this.ClientSize = new System.Drawing.Size(287, 126);
+            this.ClientSize = new System.Drawing.Size(289, 123);
             this.Controls.Add(this.lblSubSecond);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnOption);
@@ -478,13 +478,11 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(295, 153);
-            this.MinimumSize = new System.Drawing.Size(295, 153);
             this.Name = "FrmMain";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "フラッシュタイマー";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.nudHour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMinute)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSecond)).EndInit();
